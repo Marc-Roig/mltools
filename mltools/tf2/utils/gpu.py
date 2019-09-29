@@ -1,5 +1,7 @@
 import tensorflow as tf
 
+def is_gpu_available():
+    return tf.test.is_gpu_available()
 
 def allow_memory_growth():
     gpus = tf.config.experimental.list_physical_devices('GPU')
